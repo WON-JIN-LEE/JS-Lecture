@@ -2,25 +2,30 @@
 
 ## 클래스
 
-    - Fields
-    - Methods
-    - Getter & Setter
-    - 클래스 내에서 변수 앞에 # 추가하면 privateField가 된다.
-    오버라이딩이란 상속 관계에 있는 부모 클래스에서 이미 정의된 메소드를 자식 클래스에서 같은 시그니쳐를 갖는 메소드로 다시 정의하는 것
-    - instanceof 연산자는 생성자의 prototype 속성이 객체의 프로토타입 체인 어딘가 존재하는지 판별합니다.
+- class는 object(인스턴스)를 만들 수 있는 틀이다
+- Fields
+- Methods
+- Getter & Setter
+- 클래스 내에서 변수 앞에 # 추가하면 privateField가 된다.
+- 오버라이딩이란 상속 관계에 있는 부모 클래스에서 이미 정의된 메소드를 자식 클래스에서 같은 시그니쳐를 갖는 메소드로 다시 정의하는 것
+- instanceof 연산자는 생성자의 prototype 속성이 객체의 프로토타입 체인 어딘가 존재하는지 판별합니다.
 
 ---
 
 ## Object
 
-    - 오브젝트는 키와 벨류의 집합체이다.
-    - . 과 [ ]으로 프로퍼티에 접근가능하다.
-    - In 연산자를 이용하면  해당 객체에 key가 있는지 확인할 수 있다.
+- JS의 데이터 타입 중 하나
+- 관련 데이터/함수 집합체
+- JS의 거의 모든 객체는 Object의 인스턴스 입니다
+- 객체 는 key와 value의 집합체 (object = { key : value };)
+- 하나의 properties는 key: value로 구성됨
+- . 과 [ ]으로 프로퍼티에 접근가능하다.
+- In 연산자를 이용하면 해당 객체에 key가 있는지 확인할 수 있다.
 
 ## 객체 복사
 
-    - 대표적으로 3가지 방법이 있습니다.
-    - (A) Shallow copy, (B) Deep+Shallow Copy, (C) Deep Copy
+- 대표적으로 3가지 방법이 있습니다.
+- (A) Shallow copy, (B) Deep+Shallow Copy, (C) Deep Copy
 
 ### (A) Shallow copy
 

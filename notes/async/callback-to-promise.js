@@ -39,6 +39,7 @@ class UserStorage {
 const userStorage = new UserStorage();
 const id = prompt('enter your id');
 const password = prompt('enter your passrod');
+
 userStorage
   .loginUser(id, password)
   .then(userStorage.getRoles)
@@ -49,4 +50,4 @@ userStorage
 userStorage
   .getUserWithRole(id, password) //
   .catch(console.log)
-  .then(console.log);
+  .then(role => { console.log(role.role) });
