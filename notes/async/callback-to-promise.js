@@ -50,4 +50,4 @@ userStorage
 userStorage
   .getUserWithRole(id, password) //
   .catch(console.log)
-  .then(role => { console.log(role.role) });
+  .then(console.log);
