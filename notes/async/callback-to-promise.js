@@ -33,7 +33,24 @@ class UserStorage {
     const role = await this.getRoles(id);
     return role;
   }
+
+   // Homework Answer 🚀
+  async getUserWithRole(user, password) {
+    try {
+      
+    const id = await this.loginUser(user, password);
+    const role = await this.getRoles(id);
+      console.log(`Hello ${role.name}, you have a ${role.role} role1`);
+    return role;
+      
+    } catch (err) {
+      console.error(err);
+    }
+  }
 }
+
+
+
 
 // Original code from Youtube course
 const userStorage = new UserStorage();
@@ -49,5 +66,6 @@ userStorage
 // Homework Answer 🚀
 userStorage
   .getUserWithRole(id, password) //
-  .catch(console.log)
-  .then(console.log);
+  .then(console.log)
+  .catch(console.log);
+  
